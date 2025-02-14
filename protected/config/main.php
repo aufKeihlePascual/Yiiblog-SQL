@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'Blog Site',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -20,14 +20,15 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+		
+		//unlocks Gii for building the scaffolding
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'password',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
+		
 	),
 
 	// application components
@@ -39,7 +40,9 @@ return array(
 		),
 
 		// uncomment the following to enable URLs in path-format
-		/*
+		
+
+		// THIS IS THE ROUTING CODE THAT ALSO HELP PREVENT SQL INJECTION
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
@@ -48,7 +51,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
+		
 
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),
@@ -80,6 +83,9 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		//'adminEmail'=>'webmaster@example.com',
+
+		//if there are any errors in the framework, this email is used. Also used in other parts of the website
+		'adminEmail'=>'pascual.keihlediannegyraser@auf.edu.ph',
 	),
 );
