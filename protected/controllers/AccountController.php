@@ -173,31 +173,15 @@ class AccountController extends Controller
 
 	public function actionConvert() {
 		$sql = User::model()->findAll(array(
-			// 'join' => 'JOIN tbl_user u ON u.account_id = t.id',
-			'condition' => 'lastname LIKE :lastname AND YEAR(date_hired) <= :date',
+			'condition' => 'firstname LIKE :firstname',
 			'params' => array(
-				':date' => '2019-12-31',
-				':lastname' => 'B%',
+				':firstname' => '%y',
 			),
 		));
-		
+
 		$this->render('convert', array(
 			'sql' => $sql,
 		));
 	}
 
-	public function actionOne() {
-		$model = new User();
-		$sql = $model->findAll(array(
-			'condition' => 'lastname LIKE :lastname AND YEAR(date_hired) <= :date',
-			'params' => array(
-				':lastname' => 'B%',
-				':date' => '2019-12-31',
-			),
-		));
-
-		$this->render('one', array(
-			'sql' => $sql,
-		));
-	}
 }
