@@ -40,3 +40,1884 @@ Stack trace:
 REQUEST_URI=/yiiblog/index.php/site/login
 HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
 ---
+2025/03/07 06:31:52 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_user` `t` WHERE LOWER(username) =?  LIMIT 1.
+in C:\xampp\htdocs\yiiblog\protected\components\UserIdentity.php (24)
+in C:\xampp\htdocs\yiiblog\protected\models\LoginForm.php (54)
+in C:\xampp\htdocs\yiiblog\protected\controllers\SiteController.php (94)
+2025/03/07 06:31:52 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_user` `t` WHERE LOWER(username) =?  LIMIT 1 in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1464): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yiiblog\protected\components\UserIdentity.php(24): CActiveRecord->find('LOWER(username)...', Array)
+#4 C:\xampp\htdocs\yiiblog\protected\models\LoginForm.php(54): UserIdentity->authenticate()
+#5 C:\xampp\htdocs\yiiblog\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 C:\xampp\htdocs\yiiblog\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#8 C:\xampp\htdocs\yiiblog\protected\controllers\SiteController.php(94): CModel->validate()
+#9 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/site/login
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 06:32:31 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_user` `t` WHERE LOWER(username) =?  LIMIT 1.
+in C:\xampp\htdocs\yiiblog\protected\components\UserIdentity.php (24)
+in C:\xampp\htdocs\yiiblog\protected\models\LoginForm.php (54)
+in C:\xampp\htdocs\yiiblog\protected\controllers\SiteController.php (94)
+2025/03/07 06:32:31 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_user` `t` WHERE LOWER(username) =?  LIMIT 1 in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1464): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yiiblog\protected\components\UserIdentity.php(24): CActiveRecord->find('LOWER(username)...', Array)
+#4 C:\xampp\htdocs\yiiblog\protected\models\LoginForm.php(54): UserIdentity->authenticate()
+#5 C:\xampp\htdocs\yiiblog\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 C:\xampp\htdocs\yiiblog\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#8 C:\xampp\htdocs\yiiblog\protected\controllers\SiteController.php(94): CModel->validate()
+#9 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/site/login
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 06:33:36 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "gio". in C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('gio')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiiblog/index.php/gio
+---
+2025/03/07 06:38:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "test". in C:\xampp\htdocs\yiiblog\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test')
+#3 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiblog/index.php/site/test
+HTTP_REFERER=https://localhost/yiiblog/index.php
+---
+2025/03/07 06:42:51 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "test". in C:\xampp\htdocs\yiiblog\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test')
+#3 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiblog/index.php/site/test
+HTTP_REFERER=https://localhost/yiiblog/index.php
+---
+2025/03/07 06:44:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "test". in C:\xampp\htdocs\yiiblog\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test')
+#3 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiblog/index.php/site/test
+HTTP_REFERER=https://localhost/yiiblog/index.php
+---
+2025/03/07 06:44:40 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "test". in C:\xampp\htdocs\yiiblog\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test')
+#3 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiblog/index.php/site/test
+HTTP_REFERER=https://localhost/yiiblog/index.php/
+---
+2025/03/07 06:45:59 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "test". in C:\xampp\htdocs\yiiblog\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test')
+#3 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiblog/index.php/site/test
+HTTP_REFERER=https://localhost/yiiblog/index.php/
+---
+2025/03/07 06:46:02 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "test". in C:\xampp\htdocs\yiiblog\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test')
+#3 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiblog/index.php/site/test
+---
+2025/03/07 07:23:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lastname' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_account` `t` WHERE  lastname LIKE "B%" AND YEAR(date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (175)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 07:23:38 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lastname' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_account` `t` WHERE  lastname LIKE "B%" AND YEAR(date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:24:39 [error] [exception.CDbException] CDbException: Relation "user" is not defined in active record class "Account". in C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php:227
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(300): CActiveFinder->buildJoinTree(Object(CJoinElement), 'user')
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(915): CActiveFinder->__construct(Object(Account), Array)
+#3 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1363): CActiveRecord->getActiveFinder(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#7 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#16 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#17 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:25:13 [error] [exception.CException] CException: Property "User.user" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('user')
+#1 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(33): CActiveRecord->__get('user')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#6 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(180): CController->render('convert', Array)
+#7 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#18 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:31:20 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(180): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:33:33 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(181): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:33:43 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(181): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:34:12 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(181): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:34:31 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(181): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:34:47 [error] [exception.CException] CException: Property "User.DoB" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('DoB')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('DoB')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(40): CModel->offsetGet('DoB')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(181): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:34:57 [error] [exception.CException] CException: Property "User.Date Hired" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Date Hired')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('Date Hired')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(41): CModel->offsetGet('Date Hired')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(181): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:35:39 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(181): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:36:56 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(182): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:38:47 [error] [exception.CException] CException: Property "Account.account_id" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('account_id')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('account_id')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(34): CModel->offsetGet('account_id')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(181): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:39:16 [error] [exception.CException] CException: Property "Account.account_id" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('account_id')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('account_id')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(34): CModel->offsetGet('account_id')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(181): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:40:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_account a ON a.id = user.id WHERE lastname LIKE "B%" AND YEAR(date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (176)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 07:40:07 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_account a ON a.id = user.id WHERE lastname LIKE "B%" AND YEAR(date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(176): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:40:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_account a ON a.id = t.id WHERE lastname LIKE "B%" AND YEAR(date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (176)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 07:40:20 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_account a ON a.id = t.id WHERE lastname LIKE "B%" AND YEAR(date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(176): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:40:51 [error] [exception.CException] CException: Property "Account.account_id" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('account_id')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('account_id')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(34): CModel->offsetGet('account_id')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(182): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:41:23 [error] [exception.CException] CException: Property "Account.account_id" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('account_id')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('account_id')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(34): CModel->offsetGet('account_id')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(182): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:42:24 [error] [exception.CException] CException: Property "Account.account_id" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('account_id')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('account_id')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(34): CModel->offsetGet('account_id')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(182): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:43:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_account.id' in 'on clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_user ON tbl_account.id = tbl_user.account_id WHERE lastname LIKE "B%" AND YEAR(date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (176)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 07:43:05 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_account.id' in 'on clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_user ON tbl_account.id = tbl_user.account_id WHERE lastname LIKE "B%" AND YEAR(date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(176): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:43:40 [error] [exception.CException] CException: Property "Account.account_id" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('account_id')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('account_id')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(34): CModel->offsetGet('account_id')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(182): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:44:27 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(182): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:44:35 [error] [exception.CException] CException: Property "User.a.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('a.username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('a.username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('a.username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(182): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:45:10 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(182): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:46:20 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(183): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:47:05 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(184): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:47:26 [error] [exception.CDbException] CDbException: Active record "Account" is trying to select an invalid column "t.account_id". Note, the column must exist in the table or be an expression with alias. in C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php:967
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(1286): CJoinElement->getColumnSelect(Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(437): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1364): CActiveFinder->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#7 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#16 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#17 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:47:43 [error] [exception.CDbException] CDbException: Active record "Account" is trying to select an invalid column "t.account_id". Note, the column must exist in the table or be an expression with alias. in C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php:967
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(1286): CJoinElement->getColumnSelect(Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(437): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1364): CActiveFinder->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#7 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#16 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#17 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:47:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.username' in 'field list'. The SQL statement executed was: SELECT t.account_id, t.firstname, t.middlename, t.lastname, t.gender, t.dob, t.date_hired, a.username FROM `tbl_user` `t` WHERE t.lastname LIKE "B%" AND YEAR(t.date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (176)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 07:47:48 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.username' in 'field list'. The SQL statement executed was: SELECT t.account_id, t.firstname, t.middlename, t.lastname, t.gender, t.dob, t.date_hired, a.username FROM `tbl_user` `t` WHERE t.lastname LIKE "B%" AND YEAR(t.date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(176): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:47:51 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(184): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:48:24 [error] [exception.Error] Error: Object of type User is not callable in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php:177
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#1 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#10 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#11 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:49:05 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(183): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:49:29 [error] [exception.CException] CException: Property "User.a.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('a.username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('a.username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('a.username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(183): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:49:37 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(183): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:49:55 [error] [exception.CException] CException: Property "User.t.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('t.username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('t.username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('t.username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(183): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:50:00 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(183): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:51:13 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(182): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:51:44 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(182): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:53:42 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#6 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(182): CController->render('convert', Array)
+#7 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#18 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:57:04 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(185): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 07:59:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_user u ON u.id = t.account_id WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (175)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 07:59:58 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_user u ON u.id = t.account_id WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:00:09 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(185): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:00:43 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(185): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:01:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_account` `t` WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (175)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 08:01:03 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_account` `t` WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:03:31 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(185): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:04:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `u`.`id`, `u`.`account_id`, `u`.`firstname`, `u`.`middlename`, `u`.`lastname`, `u`.`gender`, `u`.`dob`, `u`.`address`, `u`.`civil_status`, `u`.`date_hired` FROM `tbl_user` `u` JOIN tbl_account a ON a.id = u.account_id WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (175)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 08:04:41 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `u`.`id`, `u`.`account_id`, `u`.`firstname`, `u`.`middlename`, `u`.`lastname`, `u`.`gender`, `u`.`dob`, `u`.`address`, `u`.`civil_status`, `u`.`date_hired` FROM `tbl_user` `u` JOIN tbl_account a ON a.id = u.account_id WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:05:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `u`.`id`, `u`.`account_id`, `u`.`firstname`, `u`.`middlename`, `u`.`lastname`, `u`.`gender`, `u`.`dob`, `u`.`address`, `u`.`civil_status`, `u`.`date_hired` FROM `tbl_user` `u` JOIN tbl_account a ON a.id = u.account_id WHERE t.lastname LIKE :lastname AND YEAR(a.date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (175)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 08:05:23 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `u`.`id`, `u`.`account_id`, `u`.`firstname`, `u`.`middlename`, `u`.`lastname`, `u`.`gender`, `u`.`dob`, `u`.`address`, `u`.`civil_status`, `u`.`date_hired` FROM `tbl_user` `u` JOIN tbl_account a ON a.id = u.account_id WHERE t.lastname LIKE :lastname AND YEAR(a.date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:05:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.date_hired' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`account_id`, `t`.`firstname`, `t`.`middlename`, `t`.`lastname`, `t`.`gender`, `t`.`dob`, `t`.`address`, `t`.`civil_status`, `t`.`date_hired` FROM `tbl_user` `t` JOIN tbl_account a ON a.id = u.account_id WHERE t.lastname LIKE :lastname AND YEAR(a.date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (175)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 08:05:28 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.date_hired' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`account_id`, `t`.`firstname`, `t`.`middlename`, `t`.`lastname`, `t`.`gender`, `t`.`dob`, `t`.`address`, `t`.`civil_status`, `t`.`date_hired` FROM `tbl_user` `t` JOIN tbl_account a ON a.id = u.account_id WHERE t.lastname LIKE :lastname AND YEAR(a.date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:05:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_account a ON a.id = t.account_id WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (175)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 08:05:52 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_account a ON a.id = t.account_id WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:07:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_account a ON a.id = t.account_id WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (175)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 08:07:52 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_account a ON a.id = t.account_id WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:07:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_account a ON a.id = t.account_id WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (175)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 08:07:54 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_account a ON a.id = t.account_id WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:08:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_account a ON a.id = t.account_id WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (175)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 08:08:22 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`username`, `t`.`password`, `t`.`email` FROM `tbl_account` `t` JOIN tbl_account a ON a.id = t.account_id WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:09:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_account` `t` WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (175)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 08:09:20 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_account` `t` WHERE t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:10:06 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(184): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:10:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`username` AS `t0_c1`, `t`.`password` AS `t0_c2`, `t`.`email` AS `t0_c3` FROM `tbl_account` `t`  WHERE (t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date).
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (176)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 08:10:35 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`username` AS `t0_c1`, `t`.`password` AS `t0_c2`, `t`.`email` AS `t0_c3` FROM `tbl_account` `t`  WHERE (t.lastname LIKE :lastname AND YEAR(t.date_hired) <= :date) in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(810): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(441): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1364): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(176): CActiveRecord->findAll(Array)
+#7 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#18 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:11:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`username` AS `t0_c1`, `t`.`password` AS `t0_c2`, `t`.`email` AS `t0_c3` FROM `tbl_account` `t`  WHERE (lastname LIKE :lastname AND YEAR(date_hired) <= :date).
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (176)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 08:11:01 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lastname' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`username` AS `t0_c1`, `t`.`password` AS `t0_c2`, `t`.`email` AS `t0_c3` FROM `tbl_account` `t`  WHERE (lastname LIKE :lastname AND YEAR(date_hired) <= :date) in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(810): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(441): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1364): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(176): CActiveRecord->findAll(Array)
+#7 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#18 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:14:14 [error] [exception.CException] CException: Property "Account.account_id" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('account_id')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('account_id')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(34): CModel->offsetGet('account_id')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(184): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:15:07 [error] [exception.CException] CException: Property "Account.account_id" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('account_id')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('account_id')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(34): CModel->offsetGet('account_id')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(184): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:15:13 [error] [exception.CException] CException: Property "Account.account_id" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('account_id')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('account_id')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(34): CModel->offsetGet('account_id')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(184): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:16:17 [error] [exception.CException] CException: Property "Account.account_id" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('account_id')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('account_id')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(34): CModel->offsetGet('account_id')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(184): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:17:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lastname' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_account` `t` WHERE lastname LIKE :lastname AND YEAR(date_hired) <= :date.
+in C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php (175)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/07 08:17:04 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lastname' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_account` `t` WHERE lastname LIKE :lastname AND YEAR(date_hired) <= :date in C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(175): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:17:21 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(184): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:20:57 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(184): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/site/login
+---
+2025/03/07 08:22:22 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\one.php(14): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('one', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(199): CController->render('one', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionOne()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('one')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/one')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/one
+HTTP_REFERER=https://localhost/yiiblog/index.php
+---
+2025/03/07 08:23:01 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(184): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/account/one
+---
+2025/03/07 08:23:02 [error] [exception.CException] CException: Property "User.username" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CModel.php(599): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\yiiblog\protected\views\account\convert.php(35): CModel->offsetGet('username')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CController->renderPartial('convert', Array, true)
+#7 C:\xampp\htdocs\yiiblog\protected\controllers\AccountController.php(184): CController->render('convert', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): AccountController->actionConvert()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('convert')
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('account/convert')
+#19 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiiblog/index.php/account/convert
+HTTP_REFERER=https://localhost/yiiblog/index.php/account/one
+---
